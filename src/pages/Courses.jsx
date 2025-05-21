@@ -27,14 +27,13 @@ const courses = [
 
 export default function Courses() {
   return (
-    <div className="bg-gray-50 min-h-screen py-10 px-4">
+    <div dir="rtl" className="bg-gray-50 min-h-screen py-10 px-4 pt-25">
       <h1 className="text-3xl font-bold text-center text-indigo-600 mb-8">الدورات المتاحة</h1>
 
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {courses.map((course) => (
-          <div key={course.id} className="bg-white shadow-md rounded-xl overflow-hidden hover:shadow-lg transition">
+          <div key={course.id} className="bg-gray-50 border-indigo-600 border-2 border-double rounded-xl overflow-hidden hover:shadow-lg transition">
             
-            {/* صورة الدورة */}
             <img
               src={course.image}
               alt={course.title}
@@ -42,7 +41,7 @@ export default function Courses() {
             />
 
             <div className="p-6">
-              <h2 className="text-xl font-semibold text-gray-800 mb-2">{course.title}</h2>
+              <h2 className="text-xl font-semibold text-indigo-600 mb-2">{course.title}</h2>
               <p className="text-gray-600 mb-4">{course.description}</p>
               <div className="text-sm text-gray-700 space-y-1">
                 <p>💰 السعر: <span className="font-medium text-green-600">{course.price}</span></p>

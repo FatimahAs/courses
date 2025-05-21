@@ -2,7 +2,7 @@ import { Facebook, Twitter, Instagram } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-200 py-8 pt-1">
+    <footer className="bg-gray-900 text-gray-200 py-8 mt-3 pb-12">
       <div className="text-center">
   
         <h2 className="text-2xl font-bold text-white">Academic Course</h2>
