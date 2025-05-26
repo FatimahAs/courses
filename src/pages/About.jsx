@@ -1,6 +1,9 @@
+import TopBanner from "../component/TopBanner";
 export default function About() {
   return (
-    <section dir="rtl" className="bg-white py-16 px-4 md:px-8 pt-25">
+    <>
+       <TopBanner/>
+    <section dir="rtl" className="bg-white py-16 px-4 md:px-8 ">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
            
         <div>
@@ -18,6 +21,7 @@ export default function About() {
           className="w-full h-auto rounded-lg shadow-md"
         />
       </div>
-    </section>
+      </section>
+      </>
   );
 }

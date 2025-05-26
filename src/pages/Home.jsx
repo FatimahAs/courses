@@ -1,3 +1,5 @@
+import TopBanner from "../component/TopBanner";
+
 const latestCourses = [
   {
     id: 1,
@@ -14,11 +16,28 @@ const latestCourses = [
     title: "دورة React",
     image: "https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
+    {
+    id: 4,
+    title: "دورة تطوير الويب",
+    image: "https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg?auto=compress&cs=tinysrgb&w=800",
+  },
+  {
+    id: 5,
+    title: "دورة UI/UX",
+    image: "https://images.pexels.com/photos/196645/pexels-photo-196645.jpeg?auto=compress&cs=tinysrgb&w=800",
+  },
+  {
+    id: 6,
+    title: "دورة React",
+    image: "https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=800",
+  },
 ];
 
 export default function Home() {
   return (
-    <div dir="rtl" className="bg-white min-h-screen mt-15">
+    <>
+     <TopBanner/>
+    <div dir="rtl" className="bg-white min-h-screen ">
     
       <section className="bg-indigo-600 text-white py-20 text-center px-4">
         <h1 className="text-4xl font-bold mb-4">مرحباً بك في منصة Academic Courses</h1>
@@ -47,5 +66,6 @@ export default function Home() {
         </div>
       </section>
     </div>
+    </>
   );
 }

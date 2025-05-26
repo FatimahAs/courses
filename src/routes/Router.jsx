@@ -5,6 +5,9 @@ import Home from "../pages/Home";
 import About from "../pages/About";
 import Courses from "../pages/Courses";
 import Contact from "../pages/Contact";
+import Career from "../pages/Career";
+import FormCareer from "../pages/FormCareer";
+import Confirm from "../pages/Confirm";
 
 
 function Layout() {
@@ -23,8 +26,11 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       { path: "/", element: <Home /> },
-	  { path: "about", element: <About /> },
-	  { path: "courses", element: <Courses /> },
+	    { path: "about", element: <About /> },
+      { path: "courses", element: <Courses /> },
+      { path: "career", element: <Career /> },
+      { path: "formcareer", element: <FormCareer /> },
+        { path: "confirm", element: <Confirm /> },
       { path: "contact", element: <Contact /> },
     ],
   },

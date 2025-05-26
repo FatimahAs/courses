@@ -1,4 +1,5 @@
-import { SaudiRiyal ,Banknote, Clock4} from "lucide-react";
+import { SaudiRiyal, Banknote, Clock4 } from "lucide-react";
+import TopBanner from "../component/TopBanner";
 
 const courses = [
   {
@@ -25,11 +26,37 @@ const courses = [
     duration: "5 أسابيع",
     image: "https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
+   {
+    id: 4,
+    title: "دورة تطوير الويب",
+    description: "تعلم بناء مواقع باستخدام HTML, CSS, JavaScript.",
+    price: "300 ",
+    duration: "4 أسابيع",
+    image: "https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg?auto=compress&cs=tinysrgb&w=800",
+  },
+  {
+    id: 5,
+    title: "دورة تصميم واجهات",
+    description: "تعلم تصميم UI/UX بطريقة احترافية.",
+    price: "250 ",
+    duration: "3 أسابيع",
+    image: "https://images.pexels.com/photos/196645/pexels-photo-196645.jpeg?auto=compress&cs=tinysrgb&w=800",
+  },
+  {
+    id: 6,
+    title: "دورة React للمبتدئين",
+    description: "مدخل لبناء تطبيقات React بشكل عملي.",
+    price: "400 ",
+    duration: "5 أسابيع",
+    image: "https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=800",
+  },
 ];
 
 export default function Courses() {
   return (
-    <div dir="rtl" className="bg-gray-50 min-h-screen py-10 px-4 pt-25">
+    <>
+     <TopBanner/>
+    <div dir="rtl" className="bg-gray-50 min-h-screen py-10 px-4 ">
       <h1 className="text-3xl font-bold text-center text-indigo-600 mb-8">الدورات المتاحة</h1>
 
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -54,5 +81,6 @@ export default function Courses() {
         ))}
       </div>
     </div>
+    </>
   );
 }

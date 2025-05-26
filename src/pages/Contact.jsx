@@ -1,6 +1,9 @@
+import TopBanner from "../component/TopBanner";
 export default function Contact() {
   return (
-    <div  dir="rtl" className="bg-gray-50 min-h-screen py-16 px-4 md:px-8 mt-20">
+    <>
+    <TopBanner/>
+    <div  dir="rtl" className="bg-gray-50 min-h-screen py-16 px-4 md:px-8 ">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
         <div>
           <h2 className="text-3xl font-bold text-indigo-600 mb-4">تواصل معنا</h2>
@@ -9,9 +12,9 @@ export default function Contact() {
           </p>
 
           <ul className="space-y-4 text-gray-600">
-            <li>📍 العنوان: الرياض، المملكة العربية السعودية</li>
-            <li>📞 الهاتف: 0501234567</li>
-            <li>✉️ البريد الإلكتروني: support@academiccourses.com</li>
+            <li> 📍 العنوان: الرياض، المملكة العربية السعودية </li>
+            <li> 📞 الهاتف: 0501234567 </li>
+            <li> ✉️ البريد الإلكتروني: support@academiccourses.com </li>
           </ul>
         </div>
 
@@ -55,6 +58,7 @@ export default function Contact() {
           </button>
         </form>
       </div>
-    </div>
+      </div>
+      </>
   );
 }
